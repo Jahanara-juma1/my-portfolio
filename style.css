@@ -581,9 +581,22 @@ h3.my-profession{
     overflow: hidden;
     cursor: pointer;
 }
+/* .portfolio .portfolio-item-inner .portfolio-img{
+    height: 20rem;
+    width:26rem;
+    border-radius: 1rem;
+    margin:2rem;
+    overflow: hidden;
+    cursor: pointer;
+} */
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
-    display: block;
+    /* display: block; */
+    height:100%;
+    object-fit: cover;
+}
+.portfolio .portfolio-item-inner .portfolio-img:hover img{
+    transform: scale(1.2);
 }
 /* Contact */
 .contact-title{
@@ -602,7 +615,7 @@ h3.my-profession{
     flex: 0 0 25%;
     max-width: 25%;
     text-align: center;
-    /* margin-left: 60px; */
+    /* margin-left: 50px; */
     margin-bottom: 60px;
 }
 .contact .contact-info-item .icon{
